@@ -10,7 +10,9 @@ def limpar(): #Função criada com o proposito de não precisar escrever esses c
     input("Aperte 'enter' para voltar ao menu: ") #Para não apagar a tela sem o usuario pedir
     os.system('cls') #Para limpar a tela do terminal
 
-print("""                                                               
+
+while opcao_inicial!=4: #O codigo ira rodas até a opção 4 for selecionada
+    print("""                                                               
   ,---.                      ,--.,--.                          
  /  O  \  ,---. ,---.  ,---. |  |`--',--,--,--. ,---.  ,--,--. 
 |  .-.  || .--'| .-. :(  .-' |  |,--.|        || .-. |' ,-.  | 
@@ -18,7 +20,6 @@ print("""
 `--' `--' `---' `----'`----' `--'`--'`--`--`--'|  |-'  `--`--' 
                                                `--'            '
                                                """)
-while opcao_inicial!=4: #O codigo ira rodas até a opção 4 for selecionada
     print("Olá e bem vindo ao programa de produtos de limpeza da Aceslimpa!\n1-Cadrasta produto\n2-Mostrar produto\n3-Escluir produto\n4-Sair")
     opcao_inicial=input("Como podemos te ajudar?:")
 
